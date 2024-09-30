@@ -1,0 +1,5 @@
+# ninja log v5
+2	537	1727657229693182582	CMakeFiles/main.dir/sha256.cpp.o	cfc4ceeb4f436f1c
+1	1480	1727657230637182603	CMakeFiles/main.dir/main.cpp.o	6c8672a83b9a8bd9
+4	416	1727657529641189185	CMakeFiles/main.dir/fs.cpp.o	1abb1e5a79d96572
+416	674	1727657529896189191	/workspaces/dec7556T/main	b6e4860c3fe7055c

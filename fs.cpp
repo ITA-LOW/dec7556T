@@ -5,7 +5,11 @@
 #include "fs.h"
 #include <fstream>
 #include <iostream>
-#include <math>
+#include <stdlib.h>
+#include <stdio.h>
+#include <cmath>
+
+using namespace std;
 
 /**
  * @brief Inicializa um sistema de arquivos que simula EXT3
@@ -15,8 +19,37 @@
  * @param numInodes quantidade de inodes
  */
 void initFs(std::string fsFileName, int blockSize, int numBlocks, int numInodes){
-    std::fstream file(fsFileName, std::ios::out | std::ios::trunc);
-    
+
+    std::fstream file{fsFileName, std::ios::out | std::ios::trunc};
+    if(!file.is_open()){
+        cout<<"erro ao abrir"<<endl;
+    }
+
+    int tamMapaBits=ceil(numBlocks/8.0);
+    char mapaBits[tamMapaBits]{};
+    mapaBits[0]=0x01;
+
+    INODE slash{};
+    slash.IS_DIR=0x01;
+    slash.IS_USED=0x01;
+    slash.NAME[0]='/';
+
+    file.write((const char *) &blockSize, 1);
+    file.write((const char *) &numBlocks, 1);
+    file.write((const char *) &numInodes, 1);
+    file.write((const char *) mapaBits, tamMapaBits);
+    file.write((const char *) &slash, sizeof(INODE));
+
+    const char zero{0x00};
+
+    int tam=(numInodes-1)*sizeof(INODE)+1+blockSize*numBlocks;
+
+    for(int i=0;i<tam;i++)
+        file.write(&zero,1);
+
+
+    file.close();
+
 }
 
 /**

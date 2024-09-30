@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-g++"
+	BuildStamp="20240930-0047-Experimental"
+	Name="codespaces-29b129"
+	Generator="ctest-3.25.1"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="12.2.0"
+	OSName="Linux"
+	Hostname="codespaces-29b129"
+	OSRelease="6.8.0-1014-azure"
+	OSVersion="#16~22.04.1-Ubuntu SMP Thu Aug 15 21:31:41 UTC 2024"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="25"
+	ModelID="1"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="2"
+	NumberOfPhysicalCPU="1"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="7938"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3242.9"
+	>
+	<Testing>
+		<StartDateTime>Sep 30 00:47 UTC</StartDateTime>
+		<StartTestTime>1727657225</StartTestTime>
+		<TestList/>
+		<EndDateTime>Sep 30 00:47 UTC</EndDateTime>
+		<EndTestTime>1727657225</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

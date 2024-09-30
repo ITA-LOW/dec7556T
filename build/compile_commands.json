@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/workspaces/dec7556T/build",
+  "command": "/usr/bin/g++ -g -std=gnu++17 -o CMakeFiles/main.dir/main.cpp.o -c /workspaces/dec7556T/main.cpp",
+  "file": "/workspaces/dec7556T/main.cpp"
+},
+{
+  "directory": "/workspaces/dec7556T/build",
+  "command": "/usr/bin/g++ -g -std=gnu++17 -o CMakeFiles/main.dir/fs.cpp.o -c /workspaces/dec7556T/fs.cpp",
+  "file": "/workspaces/dec7556T/fs.cpp"
+},
+{
+  "directory": "/workspaces/dec7556T/build",
+  "command": "/usr/bin/g++ -g -std=gnu++17 -o CMakeFiles/main.dir/sha256.cpp.o -c /workspaces/dec7556T/sha256.cpp",
+  "file": "/workspaces/dec7556T/sha256.cpp"
+}
+]
